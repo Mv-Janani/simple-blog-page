@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="card" *ngFor='let blog of bloglist; let i=index;'>
+<div class="cardbody" >
+    <img src="{{blog.urlToImage}}">
+    <p>{{blog.author | uppercase | slice:0:70}}</p> 
+   <p> {{blog.title}}</p>   
+   <p>{{blog.description}}</p>  
+   <button routerLink="{{blog.url}}">Read More</button>
+</div>
+
+    </div>
+    <button routerLink="/add/blog">Add Blog</button>
+</div>

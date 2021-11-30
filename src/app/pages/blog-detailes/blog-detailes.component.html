@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="card" >
+<div class="cardbody" >
+    <img src="{{blog.urlToImage}}">
+    <p>{{blog.author | uppercase }}</p> 
+   <p> {{blog.title}}</p>   
+   <p>{{blog.description}}</p>  
+   <button type="button" routerLink="/add/{{blog.url}}">Update</button>
+  <button  type="button" (click)='deleteBlog()'>Delete</button>
+
+</div>
+</div>
+</div>
+

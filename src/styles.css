@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.container{
+    
+    width: 100%;
+    min-height:1200px;
+clear: both;
+
+}
+.card {
+    height: 410px;
+    width: 50%;
+    display: inline-block;
+}
+.cardbody{
+    width: 90%;
+}
